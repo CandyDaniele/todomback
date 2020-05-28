@@ -25,6 +25,10 @@ let tarefas = [
     }
 ]
 
+localStorage.setItem("tarefas", JSON.stringify(tarefas));
+
+let tarefas = JSON.parse(localStorage.getItem("tarefas"));
+
 // Array de prioridades
 // const prioridades = ['baixa','média','alta'];
 const prioridades = {1:'baixa',2:'média',3:'alta'}
